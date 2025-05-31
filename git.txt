@@ -1,0 +1,77 @@
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (main)
+$ ls -a
+./  ../  env/  ticketingsystem/
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (main)
+$ git init
+Initialized empty Git repository in C:/Users/Hp/OneDrive/Desktop/Ticket/.git/
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$ git add .
+git commit -m "Initial commit"
+[master (root-commit) 8936ee0] Initial commit
+ 18 files changed, 216 insertions(+)
+ create mode 100644 ticketingsystem/db.sqlite3
+ create mode 100644 ticketingsystem/manage.py
+ create mode 100644 ticketingsystem/ticketingsystem/__init__.py
+ create mode 100644 ticketingsystem/ticketingsystem/__pycache__/__init__.cpython-313.pyc
+ create mode 100644 ticketingsystem/ticketingsystem/__pycache__/settings.cpython-313.pyc
+ create mode 100644 ticketingsystem/ticketingsystem/__pycache__/urls.cpython-313.pyc
+ create mode 100644 ticketingsystem/ticketingsystem/__pycache__/wsgi.cpython-313.pyc
+ create mode 100644 ticketingsystem/ticketingsystem/asgi.py
+ create mode 100644 ticketingsystem/ticketingsystem/settings.py
+ create mode 100644 ticketingsystem/ticketingsystem/urls.py
+ create mode 100644 ticketingsystem/ticketingsystem/wsgi.py
+ create mode 100644 ticketingsystem/tickets/__init__.py
+ create mode 100644 ticketingsystem/tickets/admin.py
+ create mode 100644 ticketingsystem/tickets/apps.py
+ create mode 100644 ticketingsystem/tickets/migrations/__init__.py
+ create mode 100644 ticketingsystem/tickets/models.py
+ create mode 100644 ticketingsystem/tickets/tests.py
+ create mode 100644 ticketingsystem/tickets/views.py
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$ ^C
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$ ^C
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$ git remote -v
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$ git remote add origin https://github.com/abhishek591/MyProject.git
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (22/22), 6.01 KiB | 384.00 KiB/s, done.
+Total 22 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/abhishek591/MyProject/pull/new/master
+remote:
+To https://github.com/abhishek591/MyProject.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Hp@Abhi MINGW64 ~/OneDrive/Desktop/Ticket (master)
+$
